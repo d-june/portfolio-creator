@@ -1,0 +1,35 @@
+// Заголовки, общие БЄМ блоки и проче...
+
+.btn {
+	background-color: $mainColor;
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: rem(17) rem(30);
+	transition: all 0.3s ease 0s;
+	font-size: rem(18);
+	&:hover {
+		background-color: $orangeDark;
+	}
+	@media (max-width: $mobile) {
+		font-size: rem(12);
+		padding: rem(10) rem(20);
+	}
+}
+
+.title {
+	font-weight: 700;
+	@include adaptiveValue("font-size", 22, 18);
+	line-height: 100%;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	color: $coral;
+}
+
+.subtitle {
+	font-weight: 700;
+	@include adaptiveValue("font-size", 54, 22);
+	line-height: 110%;
+	letter-spacing: 1px;
+}

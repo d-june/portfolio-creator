@@ -1,0 +1,267 @@
+html
+	head
+		link(rel="stylesheet" href='css/style.min.css')
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		title Portfolio creator
+	body
+		wrapper.wrapper
+			include html/header
+			main.main
+				section.main__about.about-main
+					.about-main__container._container 
+						.about-main__column
+							.about-main__title._top I design products
+							.about-main__title._middle that delight and inspire people.
+							.about-main__text Hi! I’m Jake, a product designer based in Berlin. I create user-friendly interfaces for fast-growing startups.
+							.about-main__buttons 
+								button.about-main__call.btn(type="button" data-popup="#callback") Book a call
+								a.about-main__download._icon-arrow-forward(href="404.html", target="_blank") Download CV
+						.about-main__column
+							.about-main__image-ibg
+								img.about-main__picture(src="@img/avatar.png", alt="Фото")
+				section.main__trusted.trusted-main
+					.trusted-main__container._container 	
+						.trusted-main__title Trusted by
+						.trusted-main__body 
+							.trusted-main__image-ibg_contain
+								img.trusted-main__picture(src="@img/companies/1.png", alt="ipsum")
+							.trusted-main__image-ibg_contain
+								img.trusted-main__picture(src="@img/companies/2.png", alt="ipsum")
+							.trusted-main__image-ibg_contain
+								img.trusted-main__picture(src="@img/companies/3.png", alt="ipsum")
+							.trusted-main__image-ibg_contain
+								img.trusted-main__picture(src="@img/companies/4.png", alt="ipsum")
+				section.main__services.services-main
+					.services-main__container._container 
+						h2.services-main__title.title Services
+						.services-main__subtitle.subtitle Design that solves problems, one product at a time.
+						.services-main__body 
+							.services-main__item.item-main-services
+								.item-main-services__top
+									.item-main-services__image-ibg_contain
+										img.item-main-services(src="@img/icons/1.png", alt="иконка")
+									.item-main-services__title What I can do for you
+								.item-main-services__text Faster, better products that your users love. Here's all the services I provide:
+								ul.item-main-services__list
+									li.item-main-services__item Design Strategy
+									li.item-main-services__item Web and Mobile App Design
+									li.item-main-services__item Front-end Development
+							.services-main__item.item-main-services
+								.item-main-services__top
+									.item-main-services__image-ibg_contain
+										img.item-main-services(src="@img/icons/2.png", alt="иконка")
+									.item-main-services__title Applications I'm fluent in
+								.item-main-services__text Every designer needs the right tools to do the perfect job. Thankfully, I'm multilingual.
+								ul.item-main-services__list
+									li.item-main-services__item Sketch
+									li.item-main-services__item Webflow
+									li.item-main-services__item Figma
+							.services-main__item.item-main-services
+								.item-main-services__top
+									.item-main-services__image-ibg_contain
+										img.item-main-services(src="@img/icons/3.png", alt="иконка")
+									.item-main-services__title What you can expect
+								.item-main-services__text I design products that are more than pretty. I make them shippable and usable.
+								ul.item-main-services__list
+									li.item-main-services__item Clean and functional
+									li.item-main-services__item Device and user friendly
+									li.item-main-services__item Efficient and maintainable
+				section.main__projects.projects-main
+					.projects-main__container._container 
+						h2.projects-main__title.title PROJECTS
+						.projects-main__top 
+							.projects-main__subtitle.subtitle I bring results. My clients are proof.
+							a.projects-main__all.btn(href="404.html") View all projects
+						.projects-main__slider
+							.projects-main__swiper
+								.projects-main__slide.slide-block
+									.slide-block__content
+										a.slide-block__image-ibg(href="404.html")
+											img.slide-block__picture(src="@img/projects/1.jpg")
+										.slide-block__body
+											.slide-block__category Branding
+											.slide-block__title Soulful Rebrand
+											a.slide-block__view._icon-arrow-forward(href="404.html") View Project
+								.projects-main__slide.slide-block
+									.slide-block__content
+										a.slide-block__image-ibg(href="404.html")
+											img.slide-block__picture(src="@img/projects/2.jpg")
+										.slide-block__body
+											.slide-block__category Product Design
+											.slide-block__title Datadash Product design
+											a.slide-block__view._icon-arrow-forward(href="404.html") View Project
+								.projects-main__slide.slide-block
+									.slide-block__content
+										a.slide-block__image-ibg(href="404.html")
+											img.slide-block__picture(src="@img/projects/1.jpg")
+										.slide-block__body
+											.slide-block__category Web Design
+											.slide-block__title Maize Website Design
+											a.slide-block__view._icon-arrow-forward(href="404.html") View Project
+							.projects-main__navigation
+								.projects-main__prev.swiper-button-prev
+								.projects-main__next.swiper-button-next
+				section.main__blog.blog-main 
+					.blog-main__container._container 
+						h2.blog-main__title.title Blogs
+						.blog-main__body 
+							.blog-main__column 
+								.blog-main__subtitle.subtitle Latest Blogs
+								a.blog-main__all._icon-arrow-forward(href="404.html") View all
+							.blog-main__column 
+								.blog-main__article.article-blog-main 
+									.article-blog-main__date 
+										.article-blog-main__day April 16, 2021
+										.article-blog-main__time 6 mins
+									.article-blog-main__title Design tips for designers, that cover everything you need
+									a.article-blog-main__read._icon-arrow-forward(href="404.html") Read the article
+								.blog-main__article.article-blog-main 
+									.article-blog-main__date 
+										.article-blog-main__day April 16, 2021
+										.article-blog-main__time 5 mins
+									.article-blog-main__title How to build rapport with your web design clients
+									a.article-blog-main__read._icon-arrow-forward(href="404.html") Read the article
+								.blog-main__article.article-blog-main 
+									.article-blog-main__date 
+										.article-blog-main__day April 16, 2021
+										.article-blog-main__time 5 mins
+									.article-blog-main__title Top 6 free website mockup tools 2021
+									a.article-blog-main__read._icon-arrow-forward(href="404.html") Read the article
+								.blog-main__article.article-blog-main 
+									.article-blog-main__date 
+										.article-blog-main__day April 16, 2021
+										.article-blog-main__time 7 mins
+									.article-blog-main__title Logo design trends to avoid in 2021
+									a.article-blog-main__read._icon-arrow-forward(href="404.html") Read the article
+								.blog-main__article.article-blog-main 
+									.article-blog-main__date 
+										.article-blog-main__day April 16, 2021
+										.article-blog-main__time 7 mins
+									.article-blog-main__title 22 best UI design tools
+									a.article-blog-main__read._icon-arrow-forward(href="404.html") Read the article
+			section.main__skills.skills-main 
+				.skills-main__container._container
+					.skills-main__top.top-main-skills
+						.top-main-skills__column
+							h2.top-main-skills__title.title Product Designer
+							.top-main-skills__subtitle.subtitle That's me!
+						.top-main-skills__column 
+							.top-main-skills__text Over the past 12 years, I've worked with a diverse range of clients, from startups to Fortune 500 companies. I love crafting interfaces that delight users and help businesses grow.
+					.skills-main__images 
+						.skills-main__image-ibg._big
+							img.skills-main__picture(src="@img/skills/1.jpg", alt="Картинка")
+						.skills-main__image-ibg._big
+							img.skills-main__picture(src="@img/skills/2.jpg", alt="Картинка")
+						.skills-main__image-ibg
+							img.skills-main__picture(src="@img/skills/3.jpg", alt="Картинка")
+						.skills-main__image-ibg
+							img.skills-main__picture(src="@img/skills/4.jpg", alt="Картинка")
+					.skills-main__body
+						.skills-main__column 
+							.skills-main__title 📚 Education
+							.skills-main__item.item-skills-main
+								.item-skills-main__content._left
+									.item-skills-main__subtitle Stanford University
+									.item-skills-main__text MSc (Human Computer Interaction)
+								.item-skills-main__date • 2013-2015
+								a.item-skills-main__arrow._icon-arrow-forward(href="404.html")
+							.skills-main__item.item-skills-main
+								.item-skills-main__content._left
+									.item-skills-main__subtitle MIT Summer School
+									.item-skills-main__text UX Training Bootcamp
+								.item-skills-main__date • 2013-2014
+								a.item-skills-main__arrow._icon-arrow-forward(href="404.html")
+							.skills-main__item.item-skills-main
+								.item-skills-main__content._left
+									.item-skills-main__subtitle California State University
+									.item-skills-main__text BSc in Software Engineering
+								.item-skills-main__date • 2009-2012
+								a.item-skills-main__arrow._icon-arrow-forward(href="404.html")
+						.skills-main__column 
+							.skills-main__title 💼 Work Experience
+							.skills-main__item.item-skills-main
+								.item-skills-main__content._right
+									.item-skills-main__icon
+										img.item-skills-main__image(src="@img/skills/icons/rocket.svg", alt="Иконка")
+									.item-skills-main__subtitle SpaceFleet
+									.item-skills-main__text Senior Product Designer
+								.item-skills-main__date • April 2019 - Current
+								a.item-skills-main__arrow._icon-arrow-forward(href="404.html")
+							.skills-main__item.item-skills-main
+								.item-skills-main__content._right
+									.item-skills-main__icon
+										img.item-skills-main__image(src="@img/skills/icons/music.svg", alt="Иконка")
+									.item-skills-main__subtitle MusicMash
+									.item-skills-main__text Information Architect
+								.item-skills-main__date • April 2016 - May 2017
+								a.item-skills-main__arrow._icon-arrow-forward(href="404.html")
+							.skills-main__item.item-skills-main
+								.item-skills-main__content._right
+									.item-skills-main__icon
+										img.item-skills-main__image(src="@img/skills/icons/crown.svg", alt="Иконка")
+									.item-skills-main__subtitle Kingdom
+									.item-skills-main__text UI Designer
+								.item-skills-main__date • April 2016 - May 2017
+								a.item-skills-main__arrow._icon-arrow-forward(href="404.html")
+			section.main__testimonials.testimonials-main
+				.testimonials-main__container._container 
+					.testimonials-main__slider
+							.testimonials-main__swiper
+								.testimonials-main__slide.slide-testimonials-main
+									.slide-testimonials-main__content
+										h2.slide-testimonials-main__title.title Testimonials
+										.slide-testimonials-main__subtitle.subtitle Word on the street
+										.slide-testimonials-main__body 
+											.slide-testimonials-main__image-ibg
+												img.slide-testimonials-main_picture(src="@img/testimonials/photo.jpg", alt="Фото")
+											.slide-testimonials-main__column
+												.slide-testimonials-main__icon
+													img.slide-testimonials-main__picture(src="@img/testimonials/icon.png", alt="Иконка")
+												.slide-testimonials-main__text Jade helped us build a software so intuitive that it didn't need a walkthrough. He solved complex problems with brilliant design.
+												.slide-testimonials-main__footer 
+													.slide-testimonials-main__person 
+														.slide-testimonials-main__name John Frankin
+														.slide-testimonials-main__profession Founder, Double Bunch
+													.slide-testimonials-main__navigation
+														.slide-testimonials-main__prev.swiper-button-prev._icon-arrow
+														.slide-testimonials-main__next.swiper-button-next._icon-arrow
+			section.main__faq.faq-main
+				.faq-main__container._container 
+					h2.faq-main__title.title FAQ
+					.faq-main__subtitle.subtitle Frequently asked questions
+					.faq-main__body 
+						.faq-main__spollers.spollers(data-spollers)
+							.spollers__column
+								.spollers__item
+									button.spollers__title(type="button" data-spoller) What type of projects do you take on?
+									.spollers__body Answer. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum ullam esse dignissimos aliquam! Quam doloribus odit eveniet, aliquid non praesentium repudiandae fugit laudantium fugiat accusamus mollitia ipsum sit placeat beatae?
+								.spollers__item
+									button.spollers__title(type="button" data-spoller) What is your hourly rate?
+									.spollers__body Answer. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum ullam esse dignissimos aliquam! Quam doloribus odit eveniet, aliquid non praesentium repudiandae fugit laudantium fugiat accusamus mollitia ipsum sit placeat beatae?
+								.spollers__item
+									button.spollers__title(type="button" data-spoller) What time-zone do you work in?
+									.spollers__body Answer. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum ullam esse dignissimos aliquam! Quam doloribus odit eveniet, aliquid non praesentium repudiandae fugit laudantium fugiat accusamus mollitia ipsum sit placeat beatae?
+								.spollers__item
+									button.spollers__title(type="button" data-spoller) What is the typical timeline for a project?
+									.spollers__body Answer. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum ullam esse dignissimos aliquam! Quam doloribus odit eveniet, aliquid non praesentium repudiandae fugit laudantium fugiat accusamus mollitia ipsum sit placeat beatae?
+							.spollers__column
+								.spollers__item
+									button.spollers__title(type="button" data-spoller) How do you charge for projects?
+									.spollers__body Answer. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum ullam esse dignissimos aliquam! Quam doloribus odit eveniet, aliquid non praesentium repudiandae fugit laudantium fugiat accusamus mollitia ipsum sit placeat beatae?
+								.spollers__item
+									button.spollers__title(type="button" data-spoller) What does your design process look like?
+									.spollers__body Answer. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum ullam esse dignissimos aliquam! Quam doloribus odit eveniet, aliquid non praesentium repudiandae fugit laudantium fugiat accusamus mollitia ipsum sit placeat beatae?
+								.spollers__item
+									button.spollers__title(type="button" data-spoller) What metrics do you use to measure success?
+									.spollers__body Answer. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum ullam esse dignissimos aliquam! Quam doloribus odit eveniet, aliquid non praesentium repudiandae fugit laudantium fugiat accusamus mollitia ipsum sit placeat beatae?
+								.spollers__item
+									button.spollers__title(type="button" data-spoller) What if I need help after the project is complete?
+									.spollers__body Answer. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum ullam esse dignissimos aliquam! Quam doloribus odit eveniet, aliquid non praesentium repudiandae fugit laudantium fugiat accusamus mollitia ipsum sit placeat beatae?
+			section.main__bottom.bottom-main 
+				.bottom-main__container._container 
+					.bottom-main__text.bottom-main__text_white Ready to make something kickass?
+					.bottom-main__text.bottom-main__text_blue Let's get on a call.
+			include html/footer
+			include html/popup
+
+

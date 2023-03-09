@@ -1,0 +1,103 @@
+//====================================================================================================
+
+.footer {
+	background-color: $mainColor;
+	padding-bottom: rem(20);
+	color: #ffffff;
+	&__container {
+
+	}
+	&__body {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+		justify-content: space-between;
+		gap: rem(30);
+		@include adaptiveValue("margin-bottom", 117, 30);
+	}
+	&__column {
+
+	}
+	&__logo-ibg-contain {
+		width: rem(203);
+		height: rem(28);
+		margin-bottom: rem(14);
+	}
+	&__address {
+		color: $grey;
+		font-size: rem(16);
+		line-height: 175%;
+		margin-bottom: math.div(10px, 16px) * 1em;
+	}
+	&__mail {
+		display: flex;
+		gap: rem(10);
+		color: $grey;
+		transition: all 0.3s ease 0s;
+		&:hover {
+			color: $blue;
+		}
+	}
+	&__menu {
+
+	}
+	&__copy {
+
+	}
+}
+
+.menu-footer {
+	display: grid;
+	grid-template-columns: 33.33333% 33.33333% 33.33333%;
+	justify-content: center;
+	@media (max-width: $mobile) {
+		grid-template-columns: 1fr;
+		gap: rem(20);
+	}
+	&__list {
+
+	}
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: rem(40);
+			@media (max-width: $mobile) {
+				margin-bottom: rem(20);
+			}
+		}
+	}
+	&__link {
+		font-weight: 700;
+		@include adaptiveValue("margin-bottom", 18, 16);
+		line-height: 100%;
+		transition: all 0.3s ease 0s;
+		&:hover {
+			color: $orange;
+		}
+	}	
+}
+
+.copy-footer {
+	display: flex;
+	flex-wrap: wrap;
+	gap: rem(10);
+	@include adaptiveValue("font-size", 16, 12);
+	line-height: 140%;
+	color: #8A95AD;
+	&__item {
+
+	}
+	&__links {
+		display: flex;
+		flex-wrap: wrap;
+		gap: rem(10);
+	}
+	&__link {
+		&::before {
+			content: "/";
+			margin-right: rem(10);
+		}
+		&:hover {
+			color: #bcc2d0;
+		}
+	}
+}
+//====================================================================================================
